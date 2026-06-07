@@ -1,69 +1,291 @@
-# Codex Learning Skills
+# 🎯 Codex Learning Skills
 
-**Codex-labeled lightweight proactive learning workflow suite.**
+## 每天早晚两次，把你从被动学习拉回主动学习的轻量执行系统
 
-This repository is the **codex** version of a modular learning skill system. It is not meant to replace the heavier `learning-system` repositories. Its job is simpler and more practical: help a Codex-style agent actively guide daily learning with planning, review, focus recovery, memory support, practice loops, and mastery checks.
+> **不是学习系统，是你的每日学习教练。**
+>
+> 不需要你懂方法论，不需要你看文档——**直接说需求，它就动起来。**
 
-## Start Here
+---
 
-The skill package lives in:
+## ⚡ 它和 Learning System 是什么关系？
 
-```text
-codex-learning-skills/
+### 一句话：不是替代品，是不同场景的不同工具。
+
+| | **Learning System** | **Codex Learning Skills** |
+|---|---|---|
+| **定位** | 学习百科操作系统 | 每日轻量执行伙伴 |
+| **规模** | 37+本书，9+1大模块 | 11个独立 skill，模块精简 |
+| **适合谁** | 想系统建立学习方法论的人 | 每天需要被推着学的人 |
+| **入口压力** | 较重（需了解系统架构） | **极轻（直接说需求就启动）** |
+| **主动性** | 有 M09 主动代理 | **更强（07:00/21:00 自动触发）** |
+| **最佳使用** | 深度学习和备考 | **日常节奏维护** |
+
+💡 **你可以同时用两个。** Learning System 做你的"方法论库"，Codex Skills 做你的"每日教练"。
+
+---
+
+## 🚀 30秒傻瓜式入口
+
+不知道用哪个？看这里：
+
+| 你现在的状态 | 直接说这句话 | 系统自动做什么 |
+|---|---|---|
+| 今天不知道学啥 | `"帮我规划今天的学习"` | `orchestrator` 自动调配今日计划 |
+| 不想动 / 拖延了 | `"我没状态"` | `motivation-engine` 启动动力引擎 |
+| 学了但没理解 | `"这个东西我没搞懂"` | `understanding-engine` 深度拆解 |
+| 东西记不住 | `"帮我记住XXX"` | `memory-system` / `instant-memory-helper` 上线 |
+| 练了没效果 | `"怎么练才有效"` | `deliberate-practice-coach` 设计训练方案 |
+| 无法集中注意力 | `"我无法专注"` | `focus-energy-manager` 启动专注模式 |
+| 不知道怎么用知识 | `"学了这个有什么用"` | `knowledge-application-lab` 真实场景应用 |
+| 晚上想复盘 | `"今天学得怎么样"` | `feedback-review` 复盘引擎启动 |
+| 需要记忆方法指导 | `"教我怎么记"` | `memory-method-coach` 教练模式 |
+| 急着要背东西 | `"紧急！帮我速记XXX"` | `instant-memory-helper` 紧急打包 |
+| 想确认掌握程度 | `"我真的学会了吗"` | `mastery-verifier` 分级验证 |
+
+> 💬 **核心原则：你说人话，系统干活。** 不需要记技能名，不需要查文档。
+
+---
+
+## 🧩 11个技能一览表
+
+### 核心执行层
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **learning-workflow-orchestrator** | 总调度：自动识别问题→分配给对应技能 | 所有学习需求的入口 |
+
+### 动力层
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **learning-motivation-engine** | 动力激发、拖延干预、状态恢复 | "没状态""不想学""拖延了" |
+
+### 认知层
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **learning-understanding-engine** | 深度理解、批判性提问、概念拆解 | "没搞懂""一知半解" |
+| **learning-memory-system** | 记忆编码、复习间隔、抗遗忘 | "记不住""忘了""复习" |
+| **deliberate-practice-coach** | 刻意练习设计、反馈循环、 drills | "怎么练""练了没效果" |
+
+### 反馈与验证层
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **learning-feedback-review** | 每日复盘、学习日志、效果评估 | 晚间复盘、"今天学得怎么样" |
+| **learning-mastery-verifier** | 分级验证清单、掌握程度检测 | "真的学会了吗""能过考试吗" |
+
+### 支撑层
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **focus-energy-manager** | 专注管理、时间块划分、能量调配 | "无法专注""分心""效率低" |
+| **knowledge-application-lab** | 知识迁移、真实场景模拟、输出练习 | "学了有什么用""怎么用" |
+
+### 记忆特快通道 🔥
+| 技能 | 职责 | 触发场景 |
+|---|---|---|
+| **memory-method-coach** | 教你记忆方法（教学+练习） | "教我怎么记""想学记忆法" |
+| **instant-memory-helper** | 紧急速记包（不教方法，直接帮你记） | "紧急！马上要考""快速记住XXX" |
+
+> **⚡ instant-memory-helper 是王牌技能**——当你没时间学方法时，它直接把内容变成可记忆的图像/故事/口诀，立等可取。
+
+---
+
+## 🕐 主动工作流：不用你操心，它自己跑
+
+### 晨间 07:00 — 自动规划
+```
+☀️ 自动触发 learning-workflow-orchestrator
+   ↓
+1. 回顾昨日学习成果（从 feedback-review 读取）
+2. 分析今天的时间窗口和能量预估
+3. 生成今日学习计划（优先级+时间块）
+4. 推送给你确认（或直接执行）
 ```
 
-Use the orchestrator first:
-
-```text
-learning-workflow-orchestrator
+### 晚间 21:00 — 自动复盘
+```
+🌙 自动触发 learning-feedback-review
+   ↓
+1. 收集今日所有学习行为数据
+2. 评估完成度、理解深度、记忆保持
+3. 生成复盘报告（做了什么、效果如何、明天调整）
+4. 更新长期进度追踪
 ```
 
-It routes the user to the right module when they say things like:
+### 低状态降级机制
+```
+检测到你状态不好？
+   ↓
+❌ 不会强迫你执行完整流程
+✅ 自动降级到最小可行行动：
+   - 原本：2小时深度学习 → 降级为：15分钟轻量复习
+   - 原本：刻意练习 → 降级为：只读一遍核心概念
+   - 目标：**保持习惯不断裂，比完美更重要**
+```
 
-- "I do not want to study today."
-- "I understand it but cannot solve problems."
-- "I keep forgetting."
-- "Remind me to plan in the morning."
-- "Help me review tonight."
+---
 
-## Why This Exists
+## 🎯 从零开始的最快路径
 
-The other learning-system repositories are broad source-heavy systems. This one is the Codex-specific execution layer:
+### Day 1：第一次使用（5分钟）
 
-- lighter
-- easier to call module by module
-- marked clearly as `codex`
-- built around morning planning and evening review
-- designed to keep working when the user is tired, avoidant, or low-energy
+**Step 1 — 直接开口**
+```
+你："帮我规划今天的学习"
+系统：[orchestrator 启动] → "好的，今天想学什么？还是我来推荐？"
+```
 
-## Relationship To Other Repositories
+**Step 2 — 说你的情况**
+```
+你："我在准备XX考试，但最近总是拖延"
+系统：[motivation-engine + orchestrator 联动]
+     → 先解决动力问题，再制定计划
+     → 输出：今日计划 + 抗拖延策略
+```
 
-| Repository | Role |
+**Step 3 — 按计划执行，遇到问题随时喊**
+
+### Day 2-7：建立节奏
+
+- **早上**：收到 07:00 的自动推送（或主动说"今天的计划"）
+- **学习中**：随时调用对应技能（参考上面的30秒入口表）
+- **晚上**：收到 21:00 的复盘报告（或主动说"今天学得怎么样"）
+
+### Week 2+：形成习惯
+
+你会发现：
+- ✅ 不再需要想"今天该学什么"——系统已经安排好
+- ✅ 拖延时会自动被拦截——motivation-engine 在线
+- ✅ 记忆不再靠死记硬背——memory-system 在背后支撑
+- ✅ 每天的进步看得见——feedback-review 有数据有结论
+
+---
+
+## 📦 技术规格
+
+| 项目 | 说明 |
 |---|---|
-| `learning-system` | comprehensive learning workflow, source-heavy, M00-M09 |
-| `learning-system-v2` | enhancement layer for thinking models, habits, knowledge management, deep work |
-| `codex-learning-skills` | Codex-labeled lightweight proactive workflow suite |
+| **格式规范** | Codex Skill Format (`manifest.json` + `.md` skill files) |
+| **技能数量** | 11 个独立 skill 文件 |
+| **版本** | v0.1.0 |
+| **主动调度** | 双时段触发：晨间 07:00 / 晚间 21:00 |
+| **数据源集成** | 微信读书 API（学习素材获取） |
+| **架构特点** | 模块独立、松耦合、可单独调用也可联动 |
+| **定位标签** | `codex` — 区分于标准 learning-system |
 
-## Included Modules
-
-- `learning-workflow-orchestrator`
-- `learning-motivation-engine`
-- `learning-understanding-engine`
-- `learning-memory-system`
-- `deliberate-practice-coach`
-- `learning-feedback-review`
-- `focus-energy-manager`
-- `knowledge-application-lab`
-- `learning-mastery-verifier`
-- `memory-method-coach`
-- `instant-memory-helper`
-
-## Codex Marker
-
-```text
-origin: codex
-package: codex-learning-skills
+### 目录结构
+```
+codex-learning-skills/
+├── manifest.json           # 技能清单和元数据
+├── README.md               # 本文件
+└── skills/
+    ├── learning-workflow-orchestrator.md
+    ├── learning-motivation-engine.md
+    ├── learning-understanding-engine.md
+    ├── learning-memory-system.md
+    ├── deliberate-practice-coach.md
+    ├── learning-feedback-review.md
+    ├── focus-energy-manager.md
+    ├── knowledge-application-lab.md
+    ├── learning-mastery-verifier.md
+    ├── memory-method-coach.md
+    └── instant-memory-helper.md
 ```
 
-Every included skill copy also contains `CODEX_ORIGIN.md` so this suite can be distinguished from other AI-generated learning systems.
+---
 
+## 🎭 设计哲学
+
+### 为什么叫 "Codex" Skills？
+
+**Codex = 代码本 = 执行手册**
+
+这不是一本让你读的教科书，而是一本**拿来就能执行的代码手册**：
+- ❌ 不是："这是记忆的原理，你应该..."（教科书）
+- ✅ 而是："你说要记这个，我帮你打包成图像故事，30秒后可背诵"（执行手册）
+
+### 三大设计原则
+
+| 原则 | 解释 | 体现 |
+|---|---|---|
+| **极低门槛** | 不需要前置知识 | 直接说需求就启动 |
+| **主动出击** | 不等你来问 | 07:00/21:00 自动触发 |
+| **容错友好** | 状态差也不放弃 | 低状态时自动降级，保持习惯 |
+
+### 与 Learning System 的配合建议
+
+```
+你的学习体系：
+
+┌─────────────────────────────────────────┐
+│  Learning System (方法论库)              │
+│  · 37本书的知识沉淀                       │
+│  · 完整的学习科学理论框架                  │
+│  · 深度学习和备考时的完整工具链            │
+└──────────────────┬──────────────────────┘
+                   │ 相互补充
+                   ↓
+┌─────────────────────────────────────────┐
+│  Codex Learning Skills (每日教练)        │ ← 你在这里
+│  · 每天早晚自动运行                       │
+│  · 直接响应你的即时需求                   │
+│  · 维持日常学习节奏                       │
+└─────────────────────────────────────────┘
+
+最佳实践：
+· 日常维护 → 用 Codex Skills（轻量、自动）
+· 深度攻坚 → 切换到 Learning System（全面、系统）
+· 备考冲刺 → 两个一起上（Codex 维持节奏 + LS 提供方法）
+```
+
+---
+
+## ⚠️ 诚实边界
+
+### 这个系统能做到
+- ✅ **每天自动提醒你学习**（07:00/21:00 双触发）
+- ✅ **根据你的自然语言需求自动匹配技能**（不需要记命令）
+- ✅ **在你状态差时提供最小可行方案**（不强迫，不崩溃）
+- ✅ **把复杂的学习方法变成一键执行的指令**（教练式交互）
+- ✅ **11个技能覆盖学习的完整闭环**（从动力到反馈）
+
+### 这个系统不能做到
+- ❌ **不能替代你的执行力**——它能推你一把，但不能替你学
+- ❌ **不是学术级的学习理论库**——那是 Learning System 的事
+- ❌ **不能保证学习效果**——效果取决于你的投入程度
+- ❌ **不支持高度定制化的学习路径**——那是 LS 的 M01-M13 模块的事
+
+### 最佳使用场景
+- 📌 **日常学习节奏维护** ← 最适合
+- 📌 **备考期间的日常推进**（配合 LS 使用）
+- 📌 **克服拖延和动力不足**
+- 📌 **需要外部推动力的学习者**
+
+### 不适合的场景
+- ❌ **需要深度理论学习**（请用 Learning System）
+- ❌ **需要完全定制化路径**（请用 Learning System）
+- ❌ **已经有强自律性的学习者**（你可能不需要这个）
+
+---
+
+## 📊 版本信息
+
+| 项目 | 值 |
+|---|---|
+| **名称** | codex-learning-skills |
+| **版本** | 0.1.0 |
+| **格式** | Codex Skill Manifest |
+| **技能数** | 11 |
+| **区分标签** | `codex` |
+| **主动调度** | 07:00 (晨间) / 21:00 (晚间) |
+| **依赖** | 微信读书 API（可选） |
+
+---
+
+## 🎯 一句话总结
+
+> **Learning System 是你的图书馆，Codex Skills 是每天早上叫你起床、晚上陪你复盘、中间还盯着你别偷懒的私人教练。**
+>
+> **不是替代品，是搭档。**
+
+---
+
+*Built with ❤️ for learners who need a push, not a textbook.*
