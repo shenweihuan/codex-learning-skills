@@ -1,0 +1,13 @@
+[
+  {
+    "id": "motivation-01",
+    "prompt": "我没有主动性，不叫我我就不学。",
+    "expected": "Diagnose motivation block, offer one choice, and create a 5-minute action with progress signal."
+  },
+  {
+    "id": "motivation-02",
+    "prompt": "我想过四级但今天就是不想背单词。",
+    "expected": "Connect purpose to one concrete action without shaming, and define a tiny vocabulary task."
+  }
+]
+

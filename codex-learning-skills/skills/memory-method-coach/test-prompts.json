@@ -1,0 +1,33 @@
+[
+  {
+    "id": "coach-vocab-01",
+    "prompt": "我想学习联想记忆，用四级词 abandon, acquire, domestic, efficient, evidence, transform 练习。",
+    "expected": "Teach image association briefly, demonstrate 2-3 word hooks, make the user complete the rest, include spelling recall, meaning recall, one example-sentence blank, and feedback scoring."
+  },
+  {
+    "id": "coach-vocab-02",
+    "prompt": "我总把 affect/effect, economic/economical, adapt/adopt 记混，帮我用记忆法训练。",
+    "expected": "Use contrast table plus image cues, give decision rules, and include a 30-second mixed quiz."
+  },
+  {
+    "id": "coach-writing-01",
+    "prompt": "教我用记忆宫殿背四级作文结构：现象引入、原因一、原因二、例子、结论。",
+    "expected": "Teach a five-location palace, require paraphrase rather than rigid recitation, and include blank outline recall."
+  },
+  {
+    "id": "coach-writing-02",
+    "prompt": "我想记住一个四级观点类作文模板，但怕死背，帮我练背诵、默写、仿写。",
+    "expected": "Use recite-write-imitate practice, include template flexibility checks, and schedule spaced review."
+  },
+  {
+    "id": "coach-abstract-01",
+    "prompt": "我想真正记住遗忘曲线、主动回忆、间隔复习、组块化之间的关系。",
+    "expected": "Use chunking plus a memory map, separate understanding from recall cue, and include explain-without-looking test."
+  },
+  {
+    "id": "coach-abstract-02",
+    "prompt": "我学了地点法但总失败，帮我诊断为什么路线和图像第二天就忘。",
+    "expected": "Diagnose cue, image, route stability, overload, and review timing; give repair actions and retest schedule."
+  }
+]
+

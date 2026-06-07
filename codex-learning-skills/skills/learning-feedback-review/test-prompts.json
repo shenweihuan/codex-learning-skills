@@ -1,0 +1,13 @@
+[
+  {
+    "id": "review-01",
+    "prompt": "晚上提醒我复盘：我今天没完成计划。",
+    "expected": "Separate facts, deviation, cause, tomorrow adjustment, and mastery verification need."
+  },
+  {
+    "id": "review-02",
+    "prompt": "我今天跳过了学习，不想复盘。",
+    "expected": "Ask for skip reason, reduce to one sentence, and carry reason to tomorrow."
+  }
+]
+

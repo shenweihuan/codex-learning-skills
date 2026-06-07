@@ -1,0 +1,13 @@
+[
+  {
+    "id": "application-01",
+    "prompt": "我知道主动回忆很重要，但不知道怎么用到四级复习。",
+    "expected": "Create an action rule, one task, a transfer variation, and review question."
+  },
+  {
+    "id": "application-02",
+    "prompt": "我读完学会提问，怎么用到评价一篇文章？",
+    "expected": "Translate knowledge into a claim/evidence/assumption application task."
+  }
+]
+

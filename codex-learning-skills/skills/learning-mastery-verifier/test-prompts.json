@@ -1,0 +1,13 @@
+[
+  {
+    "id": "mastery-01",
+    "prompt": "我学完主动回忆了，考考我是不是真的懂。",
+    "expected": "Ask for restatement, maintain checklist, ask one verification question, and withhold answer."
+  },
+  {
+    "id": "mastery-02",
+    "prompt": "用严格模式检查我是否理解今天的学习规划。",
+    "expected": "Use staged checklist verification and do not move to next stage until current stage passes."
+  }
+]
+

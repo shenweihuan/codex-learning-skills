@@ -1,0 +1,13 @@
+[
+  {
+    "id": "focus-01",
+    "prompt": "我状态很差，完全无法自控。",
+    "expected": "Stabilize first, choose recovery mode, and define a tiny next action."
+  },
+  {
+    "id": "focus-02",
+    "prompt": "我总是分心，想要一个学习时间块。",
+    "expected": "Create a focus block with friction removal and check-in."
+  }
+]
+

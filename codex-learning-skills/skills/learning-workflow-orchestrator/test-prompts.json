@@ -1,0 +1,23 @@
+[
+  {
+    "id": "route-01",
+    "prompt": "我今天不想学了，感觉完全没有主动性。",
+    "expected": "Route to motivation or focus depending on state, avoid lecturing, and give one minimum next action."
+  },
+  {
+    "id": "route-02",
+    "prompt": "我看懂了但做题不会。",
+    "expected": "Route to deliberate-practice-coach, identify practice gap, and suggest a feedback loop."
+  },
+  {
+    "id": "route-03",
+    "prompt": "早上提醒我做学习规划。",
+    "expected": "Use morning planning protocol with target, time block, risk, minimum action, and evening checkpoint."
+  },
+  {
+    "id": "route-04",
+    "prompt": "晚上我没复盘，而且状态很差。",
+    "expected": "Route to feedback review plus focus-energy-manager, reduce to minimum review, and avoid pressure."
+  }
+]
+

@@ -1,0 +1,25 @@
+{
+  "origin": "codex",
+  "package": "codex-learning-skills",
+  "version": "0.1.0",
+  "description": "Codex-labeled modular learning workflow skill suite with orchestrator, independent modules, proactive planning/review, memory, practice, feedback, focus, application, and mastery verification.",
+  "skills": [
+    "learning-workflow-orchestrator",
+    "learning-motivation-engine",
+    "learning-understanding-engine",
+    "learning-memory-system",
+    "deliberate-practice-coach",
+    "learning-feedback-review",
+    "focus-energy-manager",
+    "knowledge-application-lab",
+    "learning-mastery-verifier",
+    "memory-method-coach",
+    "instant-memory-helper"
+  ],
+  "proactive_schedule": {
+    "morning": "07:00 Asia/Shanghai",
+    "evening": "21:00 Asia/Shanghai"
+  },
+  "distinguishing_label": "codex"
+}
+

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "memory-01",
+    "prompt": "我四级单词忘得很快，应该用哪个记忆模块？",
+    "expected": "Route between memory-method-coach and instant-memory-helper based on urgency and include review timing."
+  },
+  {
+    "id": "memory-02",
+    "prompt": "我脑子里很多旧知识和错误习惯，想清空更新。",
+    "expected": "Use keep/update/delete/replace cleanup protocol."
+  }
+]
+

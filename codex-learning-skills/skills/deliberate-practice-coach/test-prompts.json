@@ -1,0 +1,13 @@
+[
+  {
+    "id": "practice-01",
+    "prompt": "我看懂语法了，但四级题还是做错。",
+    "expected": "Identify target performance, bottleneck, drill, feedback signal, and repeat schedule."
+  },
+  {
+    "id": "practice-02",
+    "prompt": "我练了很多阅读题但没进步。",
+    "expected": "Find error pattern and design one stretch-zone reading drill."
+  }
+]
+

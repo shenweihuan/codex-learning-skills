@@ -1,0 +1,33 @@
+[
+  {
+    "id": "instant-vocab-01",
+    "prompt": "明天四级，帮我快速记住 abandon, acquire, domestic, efficient, evidence, transform。",
+    "expected": "Create a compact table with hook, meaning, spelling cue, example-sentence blank, 30-second test, traps, and urgent review schedule."
+  },
+  {
+    "id": "instant-vocab-02",
+    "prompt": "我没时间学方法，直接帮我区分 affect/effect, economic/economical, adapt/adopt。",
+    "expected": "Give decision rules, contrast hooks, and a mixed blank mini quiz without a theory lesson."
+  },
+  {
+    "id": "instant-writing-01",
+    "prompt": "把观点类四级作文结构变成好记的考前记忆包：现象、原因、例子、建议、结论。",
+    "expected": "Use a five-symbol or five-location skeleton, avoid long theory, include a 30-second oral recall test."
+  },
+  {
+    "id": "instant-writing-02",
+    "prompt": "我今晚只想背一个作文万能框架，明天能套 online learning 和 environmental protection。",
+    "expected": "Provide a flexible frame, two topic substitutions, and a warning against rigid copied sentences."
+  },
+  {
+    "id": "instant-abstract-01",
+    "prompt": "快速帮我记住主动回忆、间隔复习、组块化、联想、迁移这五个概念。",
+    "expected": "Create one short story or route, one-line meanings for each concept, and a 30-second self-test."
+  },
+  {
+    "id": "instant-abstract-02",
+    "prompt": "把“遗忘不是失败，而是强化提取的时机”这句话变好记。",
+    "expected": "Create a concrete image that retrieves the exact sentence and include the trap that rereading is not enough."
+  }
+]
+

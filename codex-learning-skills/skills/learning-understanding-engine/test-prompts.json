@@ -1,0 +1,13 @@
+[
+  {
+    "id": "understanding-01",
+    "prompt": "我看认知天性看懂了，但说不出检索练习为什么有效。",
+    "expected": "Build a what/why/how/boundary model and ask one transfer question."
+  },
+  {
+    "id": "understanding-02",
+    "prompt": "帮我用学会提问的方法分析一个观点。",
+    "expected": "Identify claim, evidence, assumption, alternative explanation, and implication."
+  }
+]
+
